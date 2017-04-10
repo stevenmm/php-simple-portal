@@ -70,7 +70,7 @@ try {
         }
 
         .thumbnail {
-            max-height: 175px;
+            height: 175px;
             overflow: hidden;
         }
 
