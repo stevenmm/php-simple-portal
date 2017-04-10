@@ -1,0 +1,16 @@
+{
+  "production":[
+    {
+      "title":"Solr",
+      "icon": "images/solr.png",
+      "href": "http://mysolr.com"
+    }
+  ],
+  "staging":[
+    {
+      "title":"Solr",
+      "icon": "images/solr.png",
+      "href": "http://mysolr.dev"
+    }
+  ]
+}
