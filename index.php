@@ -59,6 +59,24 @@ try {
             max-width: 120px;
             max-height: 120px;
         }
+
+        .row.match-my-cols {
+            overflow: hidden;
+        }
+
+        .row.match-my-cols [class*="col-"]{
+            margin-bottom: -99999px;
+            padding-bottom: 99999px;
+        }
+
+        .thumbnail {
+            max-height: 175px;
+            overflow: hidden;
+        }
+
+        .thumbnail .caption {
+            font-size: 0.8em;
+        }
     </style>
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
 </head>
@@ -119,7 +137,7 @@ HTML;
                                     $resultArray = array_chunk($resultArray, 6);
                                     foreach ($resultArray as $row) {
                                         ?>
-                                        <div class="row">
+                                        <div class="row match-my-cols">
                                             <?= implode('', $row) ?>
                                         </div>
                                         <?php
