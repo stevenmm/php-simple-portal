@@ -89,27 +89,40 @@ try {
                     ?>
                 </ul>
                 <?php
+                $itemTemplate = <<<HTML
+<div class="col-md-2 col-xs-2">
+    <a href="{{href}}" class="thumbnail" target="_blank">
+        <img src="{{icon}}" alt="{{title}}" class="item-icon">
+        <div class="caption center-block text-center">
+            <p class="">{{title}}</p>
+        </div>
+    </a>
+</div>
+HTML;
 
                 if (!empty($entities)) {
+                    $resultArray = [];
                     foreach ($entities as $k => $entity) {
                         ?>
                         <div class="row <?= $k ?> <?= $k != $selectedEnvironment ? 'hidden' : 'show' ?>">
-                            <?php
-                            if (!empty($entity)) {
-                                foreach ($entity as $item) {
-                                    ?>
-                                    <div class="col-md-2">
-                                        <a href="<?= $item['href'] ?>" class="thumbnail" target="_blank">
-                                            <img src="<?= $item['icon'] ?>" alt="<?= $item['title'] ?>" class="item-icon">
-                                            <div class="caption center-block text-center">
-                                                <span class="label label-primary"><?= $item['title'] ?></span>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <?php
+                            <div class="col-md-12">
+                                <?php
+                                if (!empty($entity)) {
+                                    for($i = 1; $i <= count($entity); $i++){
+                                        $item = $entity[$i-1];
+                                        $resultArray[] = str_replace(["{{href}}","{{icon}}","{{title}}"],[$item['href'], $item['icon'], $item['title']], $itemTemplate);
+                                    }
+                                    $resultArray = array_chunk($resultArray, 6);
+                                    foreach ($resultArray as $row) {
+                                        ?>
+                                        <div class="row">
+                                            <?= implode('', $row) ?>
+                                        </div>
+                                        <?php
+                                    }
                                 }
-                            }
-                            ?>
+                                ?>
+                            </div>
                         </div>
                         <?php
                     }
@@ -121,11 +134,12 @@ try {
             }
             ?>
         </div>
-        <div class="panel-footer">
-            Copyright &copy; <?= date('Y') ?> by MatahariMall.com
+        <div class="panel-footer text-center">
+            Copyright &copy; <?= gmdate('Y') ?> by MatahariMall.com
         </div>
     </div>
 </section>
+<!--suppress JSUnresolvedFunction, JSValidateTypes, JSCheckFunctionSignatures -->
 <script type="text/javascript">
     $(document).ready(function () {
         let $panelBody = $('.panel-body');

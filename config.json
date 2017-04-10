@@ -1,9 +1,59 @@
 {
   "production":[
     {
+      "title":"Kibana Manhattan",
+      "icon": "images/kibana.png",
+      "href": "http://di.mataharimall.com:8090"
+    },
+    {
+      "title":"Kibana API Seller",
+      "icon": "images/kibana.png",
+      "href": "http://di.mataharimall.com:8090"
+    },
+    {
+      "title":"Elastic",
+      "icon": "images/elastic.png",
+      "href": "http://di.mataharimall.com:8090"
+    },
+    {
       "title":"Solr",
       "icon": "images/solr.png",
-      "href": "http://mysolr.com"
+      "href": "http://di.mataharimall.com:8090"
+    },
+    {
+      "title":"NSQ",
+      "icon": "images/nsq.png",
+      "href": "http://di.mataharimall.com:8090"
+    },
+    {
+      "title":"NSQ",
+      "icon": "images/nsq.png",
+      "href": "http://di.mataharimall.com:8090"
+    },
+    {
+      "title":"Datadog Battle Dashboard WWW",
+      "icon": "images/datadog.png",
+      "href": "https://app.datadoghq.com/screen/89874/battle-dashboard-www"
+    },
+    {
+      "title":"Datadog Site Performance",
+      "icon": "images/datadog.png",
+      "href": "https://app.datadoghq.com/screen/46707/site-performance-indicator-cf"
+    },
+    {
+      "title":"Sentry",
+      "icon": "images/sentry.png",
+      "href": "https://sentry.io"
+    },
+    {
+      "title":"JIRA",
+      "icon": "images/jira.png",
+      "href": "https://mataharimall.attlassian.net"
+    },
+    {
+      "title":"CONFLUENCE",
+      "icon": "images/confluence.png",
+      "href": "https://mataharimall.attlassian.net/wiki"
     }
   ],
   "staging":[
