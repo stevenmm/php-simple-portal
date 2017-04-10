@@ -18,7 +18,11 @@ $template = '';
 $groups   = [];
 
 try {
-    $entities = json_decode(file_get_contents('config.json'), true);
+    if(file_exists('config.json')){
+        $entities = json_decode(file_get_contents('config.json'), true);
+    } else {
+        $entities = json_decode(file_get_contents('config.reference.json'), true);
+    }
     $groups   = array_keys($entities);
 } catch (Exception $exception) {
     $entities = [];
