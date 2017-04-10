@@ -1,64 +1,69 @@
 {
-  "production":[
+  "production": [
     {
-      "title":"Kibana Manhattan",
+      "title": "Kibana Manhattan",
       "icon": "images/kibana.png",
       "href": "http://di.mataharimall.com:8090"
     },
     {
-      "title":"Kibana API Seller",
+      "title": "Kibana API Seller",
       "icon": "images/kibana.png",
       "href": "http://di.mataharimall.com:8090"
     },
     {
-      "title":"Elastic",
+      "title": "Elastic",
       "icon": "images/elastic.png",
       "href": "http://di.mataharimall.com:8090"
     },
     {
-      "title":"Solr",
+      "title": "Solr",
       "icon": "images/solr.png",
       "href": "http://di.mataharimall.com:8090"
     },
     {
-      "title":"NSQ",
+      "title": "NSQ",
       "icon": "images/nsq.png",
       "href": "http://di.mataharimall.com:8090"
     },
     {
-      "title":"NSQ",
+      "title": "NSQ",
       "icon": "images/nsq.png",
       "href": "http://di.mataharimall.com:8090"
     },
     {
-      "title":"Datadog Battle Dashboard WWW",
+      "title": "Datadog Battle Dashboard WWW",
       "icon": "images/datadog.png",
       "href": "https://app.datadoghq.com/screen/89874/battle-dashboard-www"
     },
     {
-      "title":"Datadog Site Performance",
+      "title": "Datadog Site Performance",
       "icon": "images/datadog.png",
       "href": "https://app.datadoghq.com/screen/46707/site-performance-indicator-cf"
     },
     {
-      "title":"Sentry",
+      "title": "Sentry",
       "icon": "images/sentry.png",
       "href": "https://sentry.io"
     },
     {
-      "title":"JIRA",
+      "title": "JIRA",
       "icon": "images/jira.png",
       "href": "https://mataharimall.attlassian.net"
     },
     {
-      "title":"CONFLUENCE",
+      "title": "CONFLUENCE",
       "icon": "images/confluence.png",
       "href": "https://mataharimall.attlassian.net/wiki"
+    },
+    {
+      "title": "PHP Profiling (Sanity)",
+      "icon": "images/webgrind.png",
+      "href":"https://di.mataharimall.com:9090"
     }
   ],
-  "staging":[
+  "staging": [
     {
-      "title":"Solr",
+      "title": "Solr",
       "icon": "images/solr.png",
       "href": "http://mysolr.dev"
     }
