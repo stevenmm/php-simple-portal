@@ -85,7 +85,7 @@ try {
     <div class="panel panel-primary">
         <div class="panel-heading">
             <div class="row">
-                <div class="col-md-5">
+                <div class="col-md-12">
                     <a href="/">
                         <img src="images/mm.png" class="logo">
                     </a>
