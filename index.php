@@ -123,8 +123,8 @@ try {
 HTML;
 
                 if (!empty($entities)) {
-                    $resultArray = [];
                     foreach ($entities as $k => $entity) {
+                        $resultArray = [];
                         ?>
                         <div class="row <?= $k ?> <?= $k != $selectedEnvironment ? 'hidden' : 'show' ?>">
                             <div class="col-md-12">
@@ -134,7 +134,13 @@ HTML;
                                         $item = $entity[$i-1];
                                         $resultArray[] = str_replace(["{{href}}","{{icon}}","{{title}}"],[$item['href'], $item['icon'], $item['title']], $itemTemplate);
                                     }
-                                    $resultArray = array_chunk($resultArray, 6);
+
+                                    if(count($resultArray) > 6){
+                                        $resultArray = array_chunk($resultArray, 6);
+                                    } else {
+                                        $resultArray = [$resultArray];
+                                    }
+
                                     foreach ($resultArray as $row) {
                                         ?>
                                         <div class="row match-my-cols">
