@@ -1,0 +1,37 @@
+.page-title {
+    font-size: 2em;
+    height: 100%;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.logo {
+    height: 50px;
+}
+
+.distance-bottom {
+    margin-bottom: 20px;
+}
+
+.item-icon {
+    max-width: 120px;
+    max-height: 120px;
+}
+
+.row.match-my-cols {
+    overflow: hidden;
+}
+
+.row.match-my-cols [class*="col-"] {
+    margin-bottom: -99999px;
+    padding-bottom: 99999px;
+}
+
+.thumbnail {
+    height: 175px;
+    overflow: hidden;
+}
+
+.thumbnail .caption {
+    font-size: 0.8em;
+}

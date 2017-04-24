@@ -1,0 +1,15 @@
+{
+    "name": "Simple Portal",
+    "description": "Just a simple portal application",
+    "version": "v0.1.1",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Steven Pangemanan"
+        }
+    ],
+    "type": "project",
+    "require": {
+        "phpgangsta/googleauthenticator": "dev-master"
+    }
+}
